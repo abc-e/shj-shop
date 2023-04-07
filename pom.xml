@@ -8,13 +8,17 @@
         <version>2.7.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>io.shj.boot</groupId>
+    <groupId>io.shj.shop</groupId>
     <artifactId>shj-shop</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>shj-shop</name>
-    <description>shj-shop</description>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <url>https://github.com/lishijiee/shj-shop</url>
+    <description>shj商城项目</description>
+
     <properties>
         <java.version>11</java.version>
+        <revision>0.0.1-SNAPSHOT</revision>
     </properties>
     <dependencies>
         <dependency>
@@ -42,6 +46,14 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <modules>
+        <module>shop-bean</module>
+        <module>shop-utils</module>
+        <module>shop-user</module>
+        <module>shop-order</module>
+        <module>shop-product</module>
+    </modules>
 
     <build>
         <plugins>
