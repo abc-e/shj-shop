@@ -10,15 +10,14 @@ import java.math.BigDecimal;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Order implements Serializable {
+public class OrderItem implements Serializable {
     private static final long serialVersionUID = -1L;
 
     private Long id;
-    private Long userId;
-    private String username;
-    private String phone;
-    private String address;
-    private BigDecimal totalPrice;
-
+    private Long orderId;
+    private Long proId;
+    private String proName;
+    private BigDecimal proPrice;
+    private Integer number;
 
 }
