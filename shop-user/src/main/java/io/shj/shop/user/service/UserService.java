@@ -1,4 +1,4 @@
-package io.shj.shop.service;
+package io.shj.shop.user.service;
 
 public interface UserService {
 }

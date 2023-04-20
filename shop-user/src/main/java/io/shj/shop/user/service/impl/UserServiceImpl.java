@@ -1,6 +1,6 @@
-package io.shj.shop.service.impl;
+package io.shj.shop.user.service.impl;
 
-import io.shj.shop.service.UserService;
+import io.shj.shop.user.service.UserService;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,4 +1,4 @@
-package io.shj.shop.controller;
+package io.shj.shop.user.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
