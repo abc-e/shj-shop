@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="io.shj.shop.user.mapper.UserMapper">
-
+    <select id="getUserById" resultType="io.shj.shop.bean.User">
+        select * from shop_user where id = #{userId};
+    </select>
 
 </mapper>

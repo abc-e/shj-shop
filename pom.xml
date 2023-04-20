@@ -27,7 +27,7 @@
         <common.logging>1.2</common.logging>
         <fastjson.version>1.2.51</fastjson.version>
         <mybatis.version>3.4.6</mybatis.version>
-        <mybatis.spring.version>3.0.1</mybatis.spring.version>
+        <mybatis.spring.version>2.0.1</mybatis.spring.version>
         <mysql.jdbc.version>8.0.19</mysql.jdbc.version>
         <druid.version>1.1.10</druid.version>
         <lombok.version>1.18.8</lombok.version>
