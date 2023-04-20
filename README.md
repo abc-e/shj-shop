@@ -12,3 +12,5 @@
 - shop-product：商品微服务，监听的端口为 9020.
 - shop-user：用户微服务，监听的端口为 9030.
 
+
+http://localhost:8060/shop-user/getUserById?userId=1
