@@ -66,8 +66,9 @@ mybatis:
   type-aliases-package: io.shj.shop.mapper
   # 配置MyBatis的xml配置文件路径
   mapper-locations: classpath:mapper/*.xml
-#  # 开启驼峰uName自动映射到u_name
-#  map-underscore-to-camel-case: true
+  # 开启驼峰uName自动映射到u_name
+  configuration:
+    map-underscore-to-camel-case: true
 
 # 打印sql
 logging:
