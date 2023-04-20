@@ -3,7 +3,7 @@
 
 > 项目总体结构
 
-其中各模块的说明如下所示：
+各模块的说明如下所示：
 
 - shj-shop：Maven 父工程。
 - shop-bean：各服务都会使用的 JavaBean 模块，包含实体类、Dto、Vo 等 JavaBean.
