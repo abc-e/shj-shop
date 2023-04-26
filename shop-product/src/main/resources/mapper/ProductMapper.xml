@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="io.shj.shop.product.mapper.ProductMapper">
+    <update id="updateProductStockById" >
+        update shop_product
+        set pro_stock = pro_stock - #{count}
+        where id = #{id};
+    </update>
+
+    <select id="getProductById" resultType="io.shj.shop.bean.Product">
+        select * from shop_product where id = #{id}
+    </select>
+
+</mapper>
