@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 @Data
 @NoArgsConstructor
@@ -14,7 +15,7 @@ public class Product implements Serializable {
 
     private Long id;
     private String proName;
-    private String proPrice;
-    private String proStock;
+    private BigDecimal proPrice;
+    private Integer proStock;
 
 }

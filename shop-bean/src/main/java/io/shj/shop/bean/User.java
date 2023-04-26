@@ -1,5 +1,7 @@
 package io.shj.shop.bean;
 
+import io.shj.shop.utils.id.SnowFlakeFactory;
+import io.shj.shop.utils.psswd.PasswordUtils;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,7 +9,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 public class User implements Serializable {
     private static final long serialVersionUID = -1L;
@@ -18,5 +19,10 @@ public class User implements Serializable {
     private String phone;
     private String address;
 
+//    public User(){
+//        this.id = SnowFlakeFactory.getSnowFlakeFromCache().nextId();
+//        //默认密码
+//        this.password = PasswordUtils.getPassword("12345");
+//    }
 
 }
