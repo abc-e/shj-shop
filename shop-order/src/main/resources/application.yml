@@ -1,11 +1,11 @@
 server:
-  port: 8060
+  port: 8090
   servlet:
-    context-path: /shop-user
+    context-path: /shop-order
 
 spring:
   application:
-    name: server-shop-user
+    name: server-shop-order
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://1.15.98.165:6033/haha?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
