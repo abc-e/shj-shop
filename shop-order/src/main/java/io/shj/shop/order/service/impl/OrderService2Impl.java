@@ -13,26 +13,25 @@ import io.shj.shop.utils.constants.HttpCode;
 import io.shj.shop.utils.resp.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.context.annotation.Bean;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 
 import java.math.BigDecimal;
+
 @Service
 @Slf4j
-public class OrderServiceImpl implements OrderService {
+public class OrderService2Impl implements OrderService {
+    @Autowired
+    private DiscoveryClient discoveryClient;
+
     @Autowired
     private OrderMapper orderMapper;
 
     @Autowired
     private OrderItemMapper orderItemMapper;
 
-//    @Bean
-//    public RestTemplate restTemplate(RestTemplateBuilder restTemplateBuilder){
-//        return restTemplateBuilder.build();
-//    }
     @Autowired
     private RestTemplate restTemplate;
 
