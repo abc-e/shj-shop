@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <url>https://github.com/lishijiee/shj-shop</url>
-    <description>shj商城项目</description>
+    <description>shj商城项目-整合</description>
 
     <properties>
         <java.version>11</java.version>
