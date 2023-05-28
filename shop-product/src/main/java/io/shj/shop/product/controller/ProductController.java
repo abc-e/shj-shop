@@ -7,8 +7,6 @@ import io.shj.shop.utils.constants.HttpCode;
 import io.shj.shop.utils.resp.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,12 +17,6 @@ public class ProductController {
 
     @Autowired
     ProductService productService;
-
-    @RequestMapping(value = "/getTest/{pp}")
-    public String getPP(@PathVariable("pp")Long pid){
-        System.out.println(pid);
-        return "OKOK"+pid;
-    }
 
     @RequestMapping(value = "/getProduct/{pid}")
     public Product getProduct(@PathVariable("pid") Long pid){
