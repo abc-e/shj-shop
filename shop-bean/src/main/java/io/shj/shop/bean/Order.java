@@ -11,8 +11,8 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Order implements Serializable {
-    private static final long serialVersionUID = -1L;
 
+    private static final long serialVersionUID = -6606551863394843824L;
     private Long id;
     private Long userId;
     private String username;

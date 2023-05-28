@@ -49,12 +49,12 @@ spring:
       #配置StatViewServlet
       stat-view-servlet:
         url-pattern: "/druid/*"
-        #允许那些ip
+        #允许哪些IP 访问，没配置或者为空，则允许所有访问
         allow: 127.0.0.1
         login-username: admin
         login-password: 123456
-        #禁止那些ip
-        deny: 192.168.1.102
+        #禁止哪些 IP 访问
+        deny: 1.15.1.102
         #是否可以重置
         reset-enable: true
         #启用
@@ -62,11 +62,11 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 192.168.140.140:8848
 # Mybatis配置
 mybatis:
   # 配置XML映射文件中指定的实体类别名路径
-  type-aliases-package: io.shj.shop.mapper
+  type-aliases-package: io.shj.shop.bean
   # 配置MyBatis的xml配置文件路径
   mapper-locations: classpath:mapper/*.xml
   # 开启驼峰uName自动映射到u_name

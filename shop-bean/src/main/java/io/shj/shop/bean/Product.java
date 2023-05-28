@@ -11,8 +11,8 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product implements Serializable {
-    private static final long serialVersionUID = -1L;
 
+    private static final long serialVersionUID = -2350304004897277253L;
     private Long id;
     private String proName;
     private BigDecimal proPrice;
