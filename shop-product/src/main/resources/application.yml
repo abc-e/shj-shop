@@ -8,9 +8,9 @@ spring:
     name: server-shop-product
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:6033/haha?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.140.140:3306/spring-boot-action?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
     username: root
-    password: HBQinjie123!
+    password: 12345
     platform: mysql
     # 连接池类型
     type: com.alibaba.druid.pool.DruidDataSource
@@ -72,6 +72,8 @@ mybatis:
   # 开启驼峰uName自动映射到u_name
   configuration:
     map-underscore-to-camel-case: true
+    # 打印 SQL
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 # 打印sql
 logging:
