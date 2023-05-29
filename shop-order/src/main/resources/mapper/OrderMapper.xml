@@ -4,7 +4,7 @@
     <insert id="insert">
         INSERT INTO shop_order
             (user_id, user_name, phone, address, total_price)
-        VALUES(0, '', '', '', 0);
+        VALUES(#{userId}, #{userName}, #{phone}, #{address}, #{totalPrice});
     </insert>
 
 </mapper>

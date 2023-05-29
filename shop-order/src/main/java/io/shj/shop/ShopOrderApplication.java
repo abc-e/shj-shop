@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan(value = {"io.shj.shop.order.mapper"})
 @EnableTransactionManagement(proxyTargetClass = true)
 @EnableDiscoveryClient
-@EnableFeignClients
+@EnableFeignClients // 启动远程调用
 public class ShopOrderApplication {
 
     public static void main(String[] args) {
