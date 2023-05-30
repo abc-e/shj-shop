@@ -4,9 +4,11 @@ import io.shj.shop.bean.Product;
 import io.shj.shop.product.mapper.ProductMapper;
 import io.shj.shop.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
+@Qualifier(value = "productService")
 public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductMapper productMapper;

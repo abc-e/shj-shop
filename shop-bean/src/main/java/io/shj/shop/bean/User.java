@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
 public class User implements Serializable {
 

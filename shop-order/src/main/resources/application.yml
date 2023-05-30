@@ -63,6 +63,17 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.140.140:8848
+    sentinel:
+      transport:
+        port: 9999  #指定和 Sentinel 控制台交互的端口，任意指定一个未使用的端口即可
+        dashboard: 192.168.140.140:8888 # Sentinel 控制台服务地址
+
+# Fegin 兼容 Sentinel 实现服务容错
+feign:
+  sentinel:
+    enabled: true
+  hystrix:
+    enabled: true
 # Mybatis配置
 mybatis:
   # 配置XML映射文件中指定的实体类别名路径

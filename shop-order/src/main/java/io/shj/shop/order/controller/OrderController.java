@@ -25,4 +25,13 @@ public class OrderController {
         orderService.saveOrder(orderParams);
         return "success";
     }
+    /**
+     * 测试 Sentinel 限流功能
+     *
+     * */
+    @GetMapping(value = "/testSentinel")
+    public String testSentinel(){
+        log.info("测试Sentinel限流功能");
+        return "shj-sentinel";
+    }
 }

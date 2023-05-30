@@ -4,9 +4,11 @@ import io.shj.shop.bean.User;
 import io.shj.shop.user.mapper.UserMapper;
 import io.shj.shop.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
+@Qualifier(value = "userService")
 public class UserServiceImpl implements UserService {
 
     @Autowired
