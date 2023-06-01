@@ -1,0 +1,22 @@
+server:
+  port: 9010
+spring:
+  application:
+    name: server-gateway
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.140.140:8848
+
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowCredentials: true
+            allowedHeaders: "*"
+      discovery:
+        locator:
+          enabled: true
